@@ -14,8 +14,8 @@ import java.util.Date;
 public class Administrador extends Usuario implements Serializable {
     private static final long serialVersionUID = 123456789L;
 
-    public Administrador(int codUsuario, String nomeusuario, String login, String senha, String email, int tipo) {
-        super(codUsuario, nomeusuario, login, senha, email, tipo);
+    public Administrador(int codUsuario, String nomeusuario, String login, String senha, String email, String cpf, int tipo) {
+        super(codUsuario, nomeusuario, login, senha, email, cpf, tipo);
     }
 
     public Administrador(String nomeusuario, String login, String senha, String email, String cpf, int tipo) {
@@ -33,6 +33,14 @@ public class Administrador extends Usuario implements Serializable {
 
     public Administrador(int codUsuario, String nomeusuario, String login, String senha, String cpf, String email) {
         super(codUsuario, nomeusuario, login, senha, cpf, email);
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 
     @Override

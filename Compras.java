@@ -20,6 +20,14 @@ public class Compras extends Usuario implements Serializable {
     int quantidade;
     private Bottons bottons;
 
+    public Compras(int codcompra, float valorcompra, int quantidade, Bottons bottons, int codUsuario, String nomeusuario) {
+        super(codUsuario, nomeusuario);
+        this.codcompra = codcompra;
+        this.valorcompra = valorcompra;
+        this.quantidade = quantidade;
+        this.bottons = bottons;
+    }
+    
     public Compras(int codcompra, float valorcompra, int quantidade, Bottons bottons, int codUsuario) {
         super(codUsuario);
         this.codcompra = codcompra;

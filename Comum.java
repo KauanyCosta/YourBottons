@@ -13,8 +13,8 @@ import java.io.Serializable;
 public class Comum extends Usuario implements Serializable{
         private static final long serialVersionUID = 123456789L;
 
-    public Comum(int codUsuario, String nomeusuario, String login, String senha, String cpf, String email, int tipo) {
-        super(codUsuario, nomeusuario, login, senha, cpf, email, tipo);
+    public Comum(int codUsuario, String nomeusuario, String login, String senha, String email,String cpf,  int tipo) {
+        super(codUsuario, nomeusuario, login, senha, email, cpf, tipo);
     }
 
     public Comum(int codUsuario, String nomeusuario, String login, String senha, String email, int tipo) {
@@ -25,7 +25,6 @@ public class Comum extends Usuario implements Serializable{
         super(nomeusuario, login, senha, email, cpf, tipo);
     }
     
-
     public Comum(int codUsuario) {
         super(codUsuario);
     }
@@ -37,10 +36,19 @@ public class Comum extends Usuario implements Serializable{
     public Comum(int codUsuario, String nomeusuario, String login, String senha, String email, String cpf) {
         super(codUsuario, nomeusuario, login, senha, email, cpf);
     }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+    
     
       @Override
     public String toString() {
-        return super.toString() +"Comum{" + '}';
+        return super.toString() +"Comum";
     }
 
 }
