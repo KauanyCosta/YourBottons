@@ -7,7 +7,7 @@ package modelDominio;
 import java.io.Serializable;
 /**
  *
- * @author Kauany
+ * @author Stefany
  */
 public class Usuario implements Serializable {
 
@@ -37,7 +37,7 @@ public class Usuario implements Serializable {
         this.cpf = cpf;
         this.tipo = tipo;
     }
-    
+
     public Usuario(int codUsuario, String nomeusuario, String login, String senha, String cpf, String email) {
         this.codUsuario = codUsuario;
         this.nomeusuario = nomeusuario;
@@ -68,7 +68,7 @@ public class Usuario implements Serializable {
     public Usuario(int codUsuario, String nomeusuario) {
         this.codUsuario = codUsuario;
         this.nomeusuario = nomeusuario;
-    }    
+    }
 
     public Usuario(int codUsuario) {
         this.codUsuario = codUsuario;
@@ -81,7 +81,7 @@ public class Usuario implements Serializable {
         this.email = email;
         this.cpf = cpf;
     }
-    
+
     public Usuario(String nomeusuario, String login, String senha, String email, String cpf, int tipo){
         this.nomeusuario = nomeusuario;
         this.login = login;
@@ -90,7 +90,7 @@ public class Usuario implements Serializable {
         this.cpf = cpf;
         this.tipo = tipo;
     }
-    
+
     public Usuario(String login, String senha) {
         this.login = login;
         this.senha = senha;
@@ -155,5 +155,5 @@ public class Usuario implements Serializable {
     @Override
     public String toString() {
         return "Usuario{" + "codUsuario = " + codUsuario + ", nomeUsuario = " + nomeusuario + ", login = " + login + ", email = " + email + ", cpf = " + cpf + ", tipo = " +tipo+'}';
-    }    
+    }
 }

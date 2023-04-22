@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 
 /**
  *
- * @author Kauany
+ * @author Stefany
  */
 public class Compras extends Usuario implements Serializable {
 
@@ -20,14 +20,6 @@ public class Compras extends Usuario implements Serializable {
     int quantidade;
     private Bottons bottons;
 
-    public Compras(int codcompra, float valorcompra, int quantidade, Bottons bottons, int codUsuario, String nomeusuario) {
-        super(codUsuario, nomeusuario);
-        this.codcompra = codcompra;
-        this.valorcompra = valorcompra;
-        this.quantidade = quantidade;
-        this.bottons = bottons;
-    }
-    
     public Compras(int codcompra, float valorcompra, int quantidade, Bottons bottons, int codUsuario) {
         super(codUsuario);
         this.codcompra = codcompra;
@@ -42,7 +34,12 @@ public class Compras extends Usuario implements Serializable {
         this.quantidade = quantidade;
         this.bottons = bottons;
     }
-   
+
+    public void atualizaEstoque() {
+        // atualizando a quantidade de itens do botton
+        this.getBottons().setQuantEstoque(this.getBottons().getQuantEstoque() - quantidade);
+    }
+
     public Compras(int codUsuario) {
         super(codUsuario);
     }
@@ -86,11 +83,11 @@ public class Compras extends Usuario implements Serializable {
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
-    
+
     public String getPrecoString(){
         String padrao = "#,##0.00";
         DecimalFormat dcf = new DecimalFormat(padrao);
         return dcf.format(valorcompra);
     }
-    
+
 }

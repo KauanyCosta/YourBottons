@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Kauany
+ * @author Stefany
  */
 public class Cliente extends Usuario implements Serializable {
 
@@ -38,7 +38,7 @@ public class Cliente extends Usuario implements Serializable {
         this.tipo = tipo;
     }
 
-      @Override
+    @Override
     public String toString() {
         return super.toString() +"Cliente" ;
     }

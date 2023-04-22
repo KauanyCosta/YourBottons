@@ -8,12 +8,12 @@ import java.io.Serializable;
 
 /**
  *
- * @author Kauany
+ * @author Stefany
  */
 public class Sugestao implements Serializable {
-    
+
     private static final long serialVersionUID = 123456789L;
-    
+
     private int codsugestao;
     private String descricao;
     private Usuario usuario;
@@ -24,7 +24,7 @@ public class Sugestao implements Serializable {
         this.descricao = descricao;
         this.usuario = usuario;
         this.sugestao_aceita = sugestao_aceita;
-    }    
+    }
 
     public Sugestao(int codsugestao, String descricao, Usuario usuario) {
         this.codsugestao = codsugestao;
@@ -36,15 +36,15 @@ public class Sugestao implements Serializable {
         this.codsugestao = codsugestao;
         this.sugestao_aceita = sugestao_aceita;
     }
-    
-    
+
+
 
     public Sugestao(String descricao, Usuario usuario) {
         this.descricao = descricao;
         this.usuario = usuario;
-    } 
-    
-    
+    }
+
+
     public int getCodsugestao() {
         return codsugestao;
     }
@@ -75,5 +75,5 @@ public class Sugestao implements Serializable {
 
     public void setSugestao_aceita(int sugestao_aceita) {
         this.sugestao_aceita = sugestao_aceita;
-    }   
+    }
 }

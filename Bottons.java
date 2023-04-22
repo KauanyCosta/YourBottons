@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  *
- * @author Kauany
+ * @author Stefany
  */
 public class Bottons implements Serializable {
 
@@ -45,13 +45,13 @@ public class Bottons implements Serializable {
         this.nome = nome;
         this.imagem = imagem;
     }
-    
+
 
     public Bottons(int codBottom, int quantEstoque) {
         this.codBottom = codBottom;
         this.quantEstoque = quantEstoque;
     }
-    
+
     public Bottons(String nome, float valor, String descricao, int quantEstoque, Date datalancamento, byte[] imagem) {
         this.nome = nome;
         this.valor = valor;
@@ -60,8 +60,8 @@ public class Bottons implements Serializable {
         this.datalancamento = datalancamento;
         this.imagem = imagem;
     }
-    
-   
+
+
     public Bottons(int codBottom) {
         this.codBottom = codBottom;
     }
@@ -112,7 +112,7 @@ public class Bottons implements Serializable {
 
     public void setImagem(byte[] imagem) {
         this.imagem = imagem;
-    } 
+    }
 
     public Date getDatalancamento() {
         return datalancamento;
@@ -121,12 +121,12 @@ public class Bottons implements Serializable {
     public void setDatalancamento(Date datalancamento) {
         this.datalancamento = datalancamento;
     }
- 
+
     @Override
     public String toString() {
         return "Bottom" + "codBottom=" + codBottom + ", nome=" + nome + ", valor=" + valor + ", quantestoque=" + quantEstoque + ", datalancamento=" + datalancamento +", descricao= " +descricao+ " imagem= "+imagem;
     }
-    
+
     public String getPrecoString(){
         String padrao = "#,##0.00";
         DecimalFormat dcf = new DecimalFormat(padrao);
