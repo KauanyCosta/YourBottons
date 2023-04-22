@@ -1,2 +1,2 @@
 # YourBottons
-Programas mobile e desktop desenvolvidos para a conclusão do curso de técnico em Informática.
+Programa para mobile e, outro programa para desktop, desenvolvidos para a conclusão do curso de técnico em Informática.
