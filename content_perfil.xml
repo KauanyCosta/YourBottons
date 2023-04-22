@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PerfilActivity"
+    tools:showIn="@layout/activity_perfil">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CadastroActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:text="Meus dados:"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etPerfilNome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="12dp"
+                android:hint="Nome"
+                android:paddingStart="12dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="12dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPerfilLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_edit"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="12dp"
+                android:hint="Login"
+                android:paddingStart="12dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="12dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPerfilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="12dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPerfilSenha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="12dp"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="12dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPerfilCPF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_locked"
+                android:drawableLeft="@drawable/ic_locked"
+                android:drawablePadding="12dp"
+                android:hint="CPF"
+                android:paddingStart="12dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="12dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/bPerfilSalvar"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button1"
+                android:text="Salvar" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/bPerfilCancelar"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_button1"
+                android:text="Cancelar" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="0" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
